@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO 基礎標籤 -->
+    <title>探索我的家鄉 - 旅遊指南 | 最溫暖的在地故事</title>
+    <meta name="description" content="歡迎來到我的家鄉，這裡有壯闊的山海景觀、深厚的文化底蘊與在地人才知道的私房美食。立即開啟您的旅遊規劃！">
+    <meta name="keywords" content="旅遊, 家鄉, 景點, 美食, 行程推薦">
+
+    <!-- Open Graph 社交分享標籤 (FB/Line 分享預覽) -->
+    <meta property="og:title" content="探索我的家鄉 - 旅遊指南">
+    <meta property="og:description" content="這裡有山、有海，還有最溫暖的故事。邀請您一起來漫遊。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+            height: 80vh;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 導覽列 -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold text-blue-600">故鄉。漫遊</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600 transition">首頁</a>
+                    <a href="#attractions" class="hover:text-blue-600 transition">熱門景點</a>
+                    <a href="#food" class="hover:text-blue-600 transition">在地美食</a>
+                    <a href="#itinerary" class="hover:text-blue-600 transition">行程推薦</a>
+                </div>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                    聯絡我們
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首頁視覺區 -->
+    <section id="home" class="hero-section flex items-center justify-center text-center text-white pt-16">
+        <div class="px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">遇見，最美的家鄉</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">這裡有山、有海，還有最溫暖的故事。</p>
+            <a href="#attractions" class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-50 transition shadow-lg inline-block">
+                開啟旅程
+            </a>
+        </div>
+    </section>
+
+    <!-- 熱門景點 -->
+    <section id="attractions" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">探索熱門景點</h2>
+            <div class="w-16 h-1 mx-auto bg-blue-600 rounded"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 景點 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-100">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800" alt="晨曦山谷" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">晨曦山谷</h3>
+                    <p class="text-gray-600">觀賞雲海的最佳去處，清晨的陽光灑落在山脊上，美得令人窒息。</p>
+                </div>
+            </div>
+            
+            <!-- 景點 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-100">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&q=80&w=800" alt="靜謐湖泊" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">靜謐湖泊</h3>
+                    <p class="text-gray-600">遠離塵囂的秘境，湖水清澈見底，非常適合週末散心與野餐。</p>
+                </div>
+            </div>
+
+            <!-- 景點 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-100">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=800" alt="百年古鎮" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">百年古鎮</h3>
+                    <p class="text-gray-600">穿梭在青石板路上，感受家鄉深厚的文化底蘊與歷史足跡。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在地美食 -->
+    <section id="food" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=800" alt="美食圖片" class="rounded-3xl shadow-2xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">嚐一口「家鄉味」</h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        我們家鄉的味道，是最新鮮的食材搭配傳統的烹飪方式。無論是巷口飄香的老店，還是隱藏在巷弄的創意小吃，每一口都能感受到在地的情感。
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3 text-lg font-medium">
+                            <i class="fas fa-utensils text-orange-500"></i>
+                            <span>老字號特色滷肉飯</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-lg font-medium">
+                            <i class="fas fa-utensils text-orange-500"></i>
+                            <span>手工傳承甜點與甜湯</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-lg font-medium">
+                            <i class="fas fa-utensils text-orange-500"></i>
+                            <span>每日直送的新鮮海味</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行程推薦 -->
+    <section id="itinerary" class="py-20 max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12">推薦行程</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <div class="bg-white p-8 rounded-2xl shadow-md flex-1 min-w-[280px] border border-gray-100">
+                <div class="text-blue-600 text-3xl mb-4 font-bold italic">01</div>
+                <h4 class="text-xl font-bold mb-4">一日輕旅行</h4>
+                <p class="text-gray-500">適合週末說走就走，包含兩大必訪景點與午餐推薦。</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md flex-1 min-w-[280px] border-2 border-blue-600 relative">
+                <span class="absolute top-0 right-0 bg-blue-600 text-white text-xs px-3 py-1 rounded-bl-lg rounded-tr-lg">熱門</span>
+                <div class="text-blue-600 text-3xl mb-4 font-bold italic">02</div>
+                <h4 class="text-xl font-bold mb-4">深度兩天一夜</h4>
+                <p class="text-gray-500">入住特色民宿，深入體驗古鎮文化與夜間觀星行程。</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md flex-1 min-w-[280px] border border-gray-100">
+                <div class="text-blue-600 text-3xl mb-4 font-bold italic">03</div>
+                <h4 class="text-xl font-bold mb-4">美食饕客團</h4>
+                <p class="text-gray-500">從早吃到晚，完整收錄在地人才知道的隱藏版美食。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-6 text-blue-400">歡迎來到我的家鄉</h3>
+            <div class="flex justify-center space-x-8 mb-8 text-2xl">
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-red-500 transition"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2024 家鄉旅遊推廣小組. 版權所有.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 導覽列滾動陰影效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md', 'bg-white');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
